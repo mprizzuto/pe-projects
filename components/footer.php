@@ -1,3 +1,4 @@
+			</article>
 		</main>
 		<footer>
 			<inner-column>
