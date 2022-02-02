@@ -24,3 +24,9 @@ ul.skill-list {
 	margin-top: 10px;
 	line-height:  2;
 }
+
+nav a {
+	display: inline-block;
+}
+
+
