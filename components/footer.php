@@ -2,7 +2,7 @@
 		</main>
 		<footer>
 			<inner-column>
-				<h2>footer</h2>
+				<?php require "./components/nav.php";?>
 			</inner-column>
 		</footer>
 	</body>
