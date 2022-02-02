@@ -4,20 +4,23 @@
   require "components/head.php";
   require "data/skills.php";
   require "functions.php";
+
+  switch($_GET) {
+    //TODO. add meta for rest of pages
+    default:
+    generateMeta("homepage", "welcome to the homepage", "./images/home.jpg");
+  }
   ?>
   <body>
-    <main class="portfolio-main">
-      <article class="portfolio-welcome">
-        <header class="welcome">
-          <inner-column>
-            <h1 class="main-title"><span class="dev-name">Marco Rizzuto</span> Portfolio</h1>
+    <main>
+      <article>
+        
+<?php 
+  //get the pages
+  switch($_GET) {
 
-            <p>most projects were inspired by the core <a href="https://perpetual.education" target="_external">Perpetual Eduation</a> curriculum. The skills demonstarted are</p>
-
-            <ul class="skill-list">
-              <li><?=generateSkills($skills)?></li>
-            </ul>
-          </inner-column>
-        </header>
-
+    default:
+    include "pages/home.php";
+  }
+  ?>
   
