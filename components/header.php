@@ -5,17 +5,24 @@
   require "data/skills.php";
   require "functions.php";
 
+  // conditionally get class for pages, default to homepage class 
+  $page = $_POST ? "": "homepage";
+  formatInput($page);
+
   switch($_GET) {
     //TODO. add meta for rest of pages
     default:
     generateMeta("homepage", "welcome to the homepage", "./images/home.jpg");
   }
+
   ?>
   <body>
-    <main>
+    <?php require "./components/nav.php";?>
+    <main class="<?=$page?>-main">
       <article>
         
-<?php 
+<?php
+  
   //get the pages
   switch($_GET) {
 
