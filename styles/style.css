@@ -7,6 +7,18 @@
 }
 
 
+body {
+	display: flex;
+	flex-direction: column;
+	padding-bottom: 15vh;
+}
+
+main {
+	min-height:  100vh;
+	flex-grow: 1;
+}
+
+
 @media(min-width: 600px) {
 
 }
