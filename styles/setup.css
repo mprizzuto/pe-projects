@@ -1,0 +1,22 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+picture {
+	display: block;
+}
+
+picture img {
+	display: block;
+	height: auto;
+	width: 100%;
+}
+
+html {
+	box-sizing: border-box;
+}
+
+*, *:before, *:after {
+	box-sizing: inherit;
+}
