@@ -5,10 +5,11 @@ function generateSkills(array $skills) {
 		echo "<li>" . "<span class='language'>$key</span> " . $value . "</li>";
 	}
 
-	// // generate the meta data for each page
-	// function generateMeta(array $data) {
-
-	// }
+	function formatInput($input) {
+		echo "<pre>";
+		var_dump($input);
+		echo "</pre>";
+	}
 ?>
 
 <?php function generateMeta(string $title, string $description, string $image) { //generate the meta data ?>
