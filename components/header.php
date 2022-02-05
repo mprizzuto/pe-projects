@@ -7,6 +7,7 @@
 
   // conditionally get class for pages, default to homepage class 
   $page = $_POST ? "": "homepage";
+  $getPage = $_GET["page"] ?? "homepage";
   formatInput($page);
 
   switch($_GET) {
@@ -18,16 +19,19 @@
   ?>
   <body>
     <?php require "./components/nav.php";?>
-    <main class="<?=$page?>-main">
+    <main class="<?=$getPage?>">
       <article>
         
-<?php
-  
-  //get the pages
-  switch($_GET) {
+      <?php
+        
+        //get the pages
+        switch($getPage) {
+          case "projects":
+            include "pages/projects.php";
+            break;
 
-    default:
-    include "pages/home.php";
-  }
-  ?>
+          default:
+            include "pages/home.php";
+        }
+        ?>
   
