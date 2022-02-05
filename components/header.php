@@ -5,15 +5,26 @@
   require "data/skills.php";
   require "functions.php";
 
-  // conditionally get class for pages, default to homepage class 
-  $page = $_POST ? "": "homepage";
   $getPage = $_GET["page"] ?? "homepage";
-  formatInput($page);
+  formatInput($getPage);
 
-  switch($_GET) {
+  //add meta based on query string
+  switch($getPage) {
     //TODO. add meta for rest of pages
+    case "projects":
+      generateMeta("projects", "welcome to the  projects page", "./images/project.jpg");
+      break;
+
+    case "goals":
+      generateMeta("goals", "welcome to the  goals page", "./images/goal.jpg");
+      break;
+
+      case "resume":
+      generateMeta("resume", "welcome to the resume page", "./images/resume.jpg");
+      break;
+
     default:
-    generateMeta("homepage", "welcome to the homepage", "./images/home.jpg");
+      generateMeta("homepage", "welcome to the  homepage", "./images/home.jpg");
   }
 
   ?>
