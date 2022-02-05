@@ -11,11 +11,13 @@ function generateSkills(array $skills) {
 		echo "</pre>";
 	}
 ?>
-
+<!-- TODO-- get head to render properly -->
 <?php function generateMeta(string $title, string $description, string $image) { //generate the meta data ?>
+	<!-- <head> -->
 	<title><?=$title?></title>
 
   <meta name="description" content="<?=$description?>">
 
   <meta property="og:image" content="<?=$image?>">
+<!-- </head> -->
 <?php } ?>

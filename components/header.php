@@ -41,6 +41,14 @@
             include "pages/projects.php";
             break;
 
+          case "goals":
+            include "pages/goals.php";
+            break;
+
+          case "resume":
+            include "pages/resume.php";
+            break;
+
           default:
             include "pages/home.php";
         }
