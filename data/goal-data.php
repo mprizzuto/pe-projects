@@ -1,5 +1,5 @@
 <?php 
-$goalList = [
+$goalData = [
 	[
 		"personal" => "Move out of cold and overcast NYC to someplace sunny. Preferably California <br> rescue a dog and cat",
 	],
