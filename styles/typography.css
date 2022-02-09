@@ -37,7 +37,7 @@ nav a {
 }
 
 /*resume page*/
-.resume-data p + h2 {
+.resume-data p + h2, .goal-data p + h2 {
 	margin-top: 20px;
 }
 
