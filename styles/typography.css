@@ -2,6 +2,10 @@ h1 {
 	font-size: 2em;
 }
 
+h2 {
+	font-size:  1.5em;
+}
+
 .language {
 	display: inline-block;
 	font-weight:  bolder;
@@ -20,6 +24,7 @@ inner-column {
 	max-width: 700px;
 }
 
+/*home page*/
 ul.skill-list {
 	margin-top: 10px;
 	line-height:  2;
@@ -27,6 +32,13 @@ ul.skill-list {
 
 nav a {
 	display: inline-block;
+	margin:  5px;
+	text-decoration: none;
+}
+
+/*resume page*/
+.resume-data p + h2 {
+	margin-top: 20px;
 }
 
 
