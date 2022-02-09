@@ -1,6 +1,6 @@
 <?php 
 require "./data/resume-data.php";
-require_once "./functions.php";
+// require_once "./functions.php";
 ?>
 
 <section class="resume-data">
