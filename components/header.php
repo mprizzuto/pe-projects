@@ -10,7 +10,6 @@
 
   //add meta based on query string
   switch($getPage) {
-    //TODO. add meta for rest of pages
     case "projects":
       generateMeta("projects", "welcome to the  projects page", "./images/project.jpg");
       break;
