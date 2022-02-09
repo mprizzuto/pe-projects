@@ -11,7 +11,7 @@ function generateSkills(array $skills) {
 		echo "</pre>";
 	}
 ?>
-<!-- TODO-- get head to render properly -->
+
 <?php function generateMeta(string $title, string $description, string $image) { //generate the meta data ?>
 	<!-- <head> -->
 	<title><?=$title?></title>
@@ -19,5 +19,19 @@ function generateSkills(array $skills) {
   <meta name="description" content="<?=$description?>">
 
   <meta property="og:image" content="<?=$image?>">
-<!-- </head> -->
+
 <?php } ?>
+
+<?php function generateResume(iterable $resumeData) { ?>
+
+	<?php foreach ($resumeData as $resume): ?>
+		<?php foreach ($resume as $key => $value): ?>
+			<h2><?=$key?></h2>
+
+			<p><?=$value?></p>
+		<?php endforeach ?>
+	<?php endforeach ?>
+<?php } ?>
+
+
+
