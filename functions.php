@@ -33,14 +33,6 @@ function generateSkills(array $skills) {
 	<?php endforeach ?>
 <?php } ?>
 
-<?php function generateGoals(iterable $goalData) { ?>
- <?php foreach($goalData as $data): ?>
- 	<?php foreach($data as $key => $value): ?>
- 		<h2><?=$key?> </h2>
- 		<p><?=$value?></p>
- 	<?php endforeach; ?>
- <?php endforeach; ?>
-<?php } ?>
 
 
 
