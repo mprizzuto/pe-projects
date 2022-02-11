@@ -41,9 +41,9 @@ require "./data/goal-data.php";
 			    }
 					?>
 			    <?php }?>
-	  		</li>
-	  	</ul>
-	  </li>
+		  		</li>
+		  	</ul>
+		  </li>
 
 		  <li><strong>at the end of the day</strong>
 		  	<?=$data["company"] ?? null?>
