@@ -8,39 +8,39 @@ require "./data/goal-data.php";
 	  <li><strong>personal</strong>
 	  	<ul class="goal-expanded">
 	  		<li><?php foreach($goalData as $data) {?>
-				<?php 
-	      for($i = 0; $i < count($data); $i++ ) {
-	        echo $data["personal"][$i] ?? null;
-	      }
-				?>
-	    <?php }?></li>
-	  	</ul>
-	  </li>
+					<?php 
+			      for($i = 0; $i < count($data); $i++ ) {
+			        echo $data["personal"][$i] ?? null;
+			      }
+						?>
+			    <?php }?></li>
+			  	</ul>
+			  </li>
 		  
-	  <li><strong>professional</strong>
-	  	<ul class="goal-expanded">
-	  		<li>
-	  			<?php foreach($goalData as $data) {?>
-			<?php 
-	    for($i = 0; $i < count($data); $i++ ) {
-	      echo $data["professional"][$i] ?? null;
-	    }
-			?>
-	    <?php }?>
-	  		</li>
-	  	</ul>
-	  </li>
+			  <li><strong>professional</strong>
+			  	<ul class="goal-expanded">
+			  		<li>
+			  			<?php foreach($goalData as $data) {?>
+					<?php 
+			    for($i = 0; $i < count($data); $i++ ) {
+			      echo $data["professional"][$i] ?? null;
+			    }
+					?>
+			    <?php }?>
+			  		</li>
+			  	</ul>
+			  </li>
 
-	  <li><strong>expectations</strong>
-	  	<ul class="goal-expanded">
-	  		<li>
-	  			<?php foreach($goalData as $data) {?>
-			<?php 
-	    for($i = 0; $i < count($data); $i++ ) {
-	      echo $data["expectations"][$i] ?? null ;
-	    }
-			?>
-	    <?php }?>
+			  <li><strong>expectations</strong>
+			  	<ul class="goal-expanded">
+			  		<li>
+			  			<?php foreach($goalData as $data) {?>
+					<?php 
+			    for($i = 0; $i < count($data); $i++ ) {
+			      echo $data["expectations"][$i] ?? null ;
+			    }
+					?>
+			    <?php }?>
 	  		</li>
 	  	</ul>
 	  </li>
