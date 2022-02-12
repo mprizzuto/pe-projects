@@ -44,6 +44,7 @@ nav a {
 /*goals page*/
 .goal-list {
 	line-height: 1.5;
+	/*list-style: square;*/
 }
 
 .goal-list li + li {
@@ -56,7 +57,9 @@ nav a {
 }
 
 .goal-expanded {
-	list-style: square;
+	list-style: circle;
+	list-style-position: inside;
+	margin-left: 10px;
 }
 
 
