@@ -13,7 +13,7 @@ function generateSkills(array $skills) {
 ?>
 
 <?php function generateMeta(string $title, string $description, string $image) { //generate the meta data ?>
-	<!-- <head> -->
+	<link rel="stylesheet" type="text/css" href="./styles/style.css">
 	<title><?=$title?></title>
 
   <meta name="description" content="<?=$description?>">
