@@ -41,4 +41,22 @@ nav a {
 	margin-top: 20px;
 }
 
+/*goals page*/
+.goal-list {
+	line-height: 1.5;
+}
+
+.goal-list li + li {
+	margin-top: 15px;
+}
+
+.goal-list strong {
+	font-weight: bolder;
+	font-size: 1.8em;
+}
+
+.goal-expanded {
+	list-style: square;
+}
+
 
