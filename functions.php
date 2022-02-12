@@ -13,7 +13,7 @@ function generateSkills(array $skills) {
 ?>
 
 <?php function generateMeta(string $title, string $description, string $image) { //generate the meta data ?>
-	<!-- <head> -->
+	<link rel="stylesheet" type="text/css" href="./styles/style.css">
 	<title><?=$title?></title>
 
   <meta name="description" content="<?=$description?>">
@@ -33,6 +33,23 @@ function generateSkills(array $skills) {
 	<?php endforeach ?>
 <?php } ?>
 
+<?php function generateGoals(iterable $goalData) {?>
+	<ul class="goal-list">
+  <?php foreach($goalData as $goals) {?>
+    <?php foreach($goals as $key => $value){ ?>
+    	<li><strong><?=$key?></strong></li>
+
+    	<li>
+    	<ul class="goal-expanded">
+    	<?php foreach($value as $subvalue){?>
+    		<li><?=$subvalue?></li>
+    	<?php }?>
+    	</ul>
+    	</li>
+    <?php } ?>
+  <?php }?>
+  </ul>
+<?php }?>
 
 
 
